@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GUSTAVOS BOOK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -6,13 +11,14 @@
     <link rel="stylesheet" href="anim.css">
 </head>
 
+
 <style>
     #spinwrapper{
         justify-content: center;
         align-items: center;
 
-        margin-top: 10%;
         padding: 2%;
+        max-width: 70%;
 
         border-radius: 20px;
         border: 5px solid black;
@@ -22,7 +28,6 @@
 
         overflow: hidden;
 
-        box-shadow: 20px 20px 28px black;
     }
 
     #spinwrapper * div {
@@ -60,11 +65,49 @@
         color: white;
     }
 
+    #top{
+        margin-top: 10%;
+
+        display: flex;
+        justify-content: center;
+    }
+
     body {
         background-image: url("../Cookies/holz.webp");
         background-size: 50%;
         background-color: black;
     }
+
+    /* CLASSES */
+
+    .sidepanels{
+        margin-top: auto;
+        margin-bottom: auto;
+
+        background-color: aqua;
+    }
+
+    .sidepanels div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        height: 125px;
+        border: 2px solid green;
+
+        aspect-ratio: 1/8;
+        
+        background-color: azure;
+    }
+
+    .sidepanels.right {
+        margin-left: 1.2%;
+    }
+    .sidepanels.left {
+        margin-right: .8%;
+    }
+
 </style>
 
 <body>
@@ -72,59 +115,88 @@
     <div id="title">
         GUSTAVO'S BOOK
     </div>
+
     <div class="container">
-        <div id="spinwrapper">
-            <div class="row d-flex">
-                <div class="col-md-2" id="x1y3">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+        <div id="top">
+            
+            <div class="sidepanels left">
+                <div class="row">
+                    1
                 </div>
-                <div class="col-md-2" id="x2y3">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+                <div class="row">
+                    2
                 </div>
-                <div class="col-md-2" id="x3y3">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
-                </div>
-                <div class="col-md-2" id="x4y3">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
-                </div>
-                <div class="col-md-2" id="x5y3">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+                <div class="row">
+                    3
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="col-md-2" id="x1y2">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+
+            <div id="spinwrapper">
+                <div class="row d-flex">
+                    <div class="col-md-2" id="x1y3">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x2y3">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x3y3">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x4y3">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x5y3">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
                 </div>
-                <div class="col-md-2" id="x2y2">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+                <div class="row d-flex">
+                    <div class="col-md-2" id="x1y2">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x2y2">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x3y2">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x4y2">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x5y2">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
                 </div>
-                <div class="col-md-2" id="x3y2">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
-                </div>
-                <div class="col-md-2" id="x4y2">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
-                </div>
-                <div class="col-md-2" id="x5y2">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+                <div class="row d-flex">
+                    <div class="col-md-2" id="x1y1">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x2y1">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x3y1">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x4y1">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
+                    <div class="col-md-2" id="x5y1">
+                        <img src="../Cookies/cheese.webp" alt="" class="">
+                    </div>
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="col-md-2" id="x1y1">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+
+            <div class="sidepanels right">
+                <div class="row">
+                    1
                 </div>
-                <div class="col-md-2" id="x2y1">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+                <div class="row">
+                    2
                 </div>
-                <div class="col-md-2" id="x3y1">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
-                </div>
-                <div class="col-md-2" id="x4y1">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
-                </div>
-                <div class="col-md-2" id="x5y1">
-                    <img src="../Cookies/cheese.webp" alt="" class="">
+                <div class="row">
+                    3
                 </div>
             </div>
+
         </div>
 
         <!-- OUTSIDE SPIN-->
@@ -136,5 +208,7 @@
     
     <script src="casinologic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <!-- GUSTAVOS BOOK MADE BY gitub.com/marksmrnw :D -->
+    <!-- THIS CODE IS A WARCRIME. 
+         - SMRNW                    -->
+    
 </body>
