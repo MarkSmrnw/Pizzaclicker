@@ -2,6 +2,8 @@
     <title>GUSTAVOS BOOK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="anim.css">
 </head>
 
 <style>
@@ -9,12 +11,18 @@
         justify-content: center;
         align-items: center;
 
-        background-color: aqua;
         margin-top: 10%;
         padding: 2%;
 
-        border: 5px solid;
         border-radius: 20px;
+        border: 5px solid black;
+
+        background-image: url("../Cookies/holzplatte.webp");
+        background-size: 100%;
+
+        overflow: hidden;
+
+        box-shadow: 20px 20px 28px black;
     }
 
     #spinwrapper * div {
@@ -25,8 +33,7 @@
         margin-left: auto;
         margin-right: auto;
 
-        border: 2px dotted;
-        background-color: aquamarine;
+        background-color: rgba(255, 255, 255, 0.377);
     }
 
     #spinwrapper * * img {
@@ -39,7 +46,7 @@
 
         border: 1px dashed;
         
-        transform: translate(-5%,5%);
+        position:relative;
     }
 
     #title{
@@ -49,6 +56,14 @@
         font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         text-align: center;
+
+        color: white;
+    }
+
+    body {
+        background-image: url("../Cookies/holz.webp");
+        background-size: 50%;
+        background-color: black;
     }
 </style>
 
@@ -61,53 +76,53 @@
         <div id="spinwrapper">
             <div class="row d-flex">
                 <div class="col-md-2" id="x1y3">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x2y3">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x3y3">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x4y3">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x5y3">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
             </div>
             <div class="row d-flex">
                 <div class="col-md-2" id="x1y2">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x2y2">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x3y2">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x4y2">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x5y2">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
             </div>
             <div class="row d-flex">
                 <div class="col-md-2" id="x1y1">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x2y1">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x3y1">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x4y1">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
                 <div class="col-md-2" id="x5y1">
-                    <img src="../Cookies/cheese.webp" alt="">
+                    <img src="../Cookies/cheese.webp" alt="" class="">
                 </div>
             </div>
         </div>

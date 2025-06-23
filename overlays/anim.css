@@ -1,0 +1,45 @@
+.intro {
+    animation-name: intro-top;
+    animation-duration: .5s;
+}
+
+.passthru {
+    animation-name: passthru;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+.outro {
+    animation-name: outro-bottom;
+    animation-duration: .5s;
+}
+
+.invis {
+    opacity: 0;
+}
+
+@keyframes intro-top {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes passthru {
+    0% {
+        transform: translate(0, -450%);
+    }
+    100% {
+        transform: translate(0, 450%);
+    }
+}
+
+@keyframes outro-bottom {
+    100%{
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+}

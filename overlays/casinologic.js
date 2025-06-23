@@ -4,12 +4,39 @@ const COOKIES = {
         "weight": 1
     },
     "2":{
-        "link":"../Cookie/pizzabild1.webp",
+        "link":"../Cookies/pizzabild3.webp",
         "weight":1
     },
     "3":{
-        "link":"../Cookie/pizzabild2.webp",
+        "link":"../Cookies/pizzabild2.webp",
         "weight":1
+    },
+    "4":{
+        "link":"../Cookies/pizzabild4.webp",
+        "weigth":1
+    },
+    "5":{
+        "link":"../Cookies/pizzaofen.webp",
+        "weight":1
+    },
+    "6":{
+        "link":"../Cookies/pizzaslice.webp",
+        "weight":1
+    },
+    "7":{
+        "link":"../Cookies/sucuk.webp",
+        "weight":1
+    },
+    "8":{
+        "link":"../Cookies/tomatenSauce.webp",
+        "weight":1
+    },
+    "9":{
+        "link":"../Cookies/pizzabot.webp",
+        "weight":1
+    },
+    "10":{
+        "link":"../Cookies/pizzabäcker.webp"
     }
 }
 
@@ -23,7 +50,8 @@ console.log(COOKIESLENGTH)
 document.addEventListener("DOMContentLoaded", () => {
     
     const SPINWRAPPER = document.getElementById("spinwrapper")
-    
+    const SPINBUTTON = document.getElementById("confirmspin")
+
     function replaceWithRandomImgs() {
         for (let i1 = 0; i1 < SPINWRAPPER.children.length; i1++) {
             
@@ -31,10 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             for (let i2 = 0; i2 < CHILD.children.length; i2++) {
                 const IMGTAG = CHILD.children[i2].children[0]
-                
-                a = COOKIES[Math.floor(Math.random() * COOKIES.length)]
-                console.log(COOKIES)
-                console.log(a)
+                IMGTAG.src = COOKIES[Math.floor(Math.random() * COOKIESLENGTH+1)]["link"]
             }
         }
     }
