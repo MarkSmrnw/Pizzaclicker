@@ -1,0 +1,125 @@
+<head>
+    <title>GUSTAVOS BOOK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    #spinwrapper{
+        justify-content: center;
+        align-items: center;
+
+        background-color: aqua;
+        margin-top: 10%;
+        padding: 2%;
+
+        border: 5px solid;
+        border-radius: 20px;
+    }
+
+    #spinwrapper * div {
+        aspect-ratio: 1/1;
+        max-height:150px;
+        max-width: 150px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        border: 2px dotted;
+        background-color: aquamarine;
+    }
+
+    #spinwrapper * * img {
+        aspect-ratio: 1/1;
+        height: 90%;
+
+        display: flex;
+        justify-self: center;
+        align-self: center;
+
+        border: 1px dashed;
+        
+        transform: translate(-5%,5%);
+    }
+
+    #title{
+        margin-top: 5%;
+
+        font-size: 40pt;
+        font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        text-align: center;
+    }
+</style>
+
+<body>
+    
+    <div id="title">
+        GUSTAVO'S BOOK
+    </div>
+    <div class="container">
+        <div id="spinwrapper">
+            <div class="row d-flex">
+                <div class="col-md-2" id="x1y3">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x2y3">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x3y3">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x4y3">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x5y3">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-2" id="x1y2">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x2y2">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x3y2">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x4y2">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x5y2">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-2" id="x1y1">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x2y1">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x3y1">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x4y1">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+                <div class="col-md-2" id="x5y1">
+                    <img src="../Cookies/cheese.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- OUTSIDE SPIN-->
+
+        <div>
+            <input type="button" value="Spin" id="confirmspin">
+        </div>
+    </div>
+    
+    <script src="casinologic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- GUSTAVOS BOOK MADE BY gitub.com/marksmrnw :D -->
+</body>
