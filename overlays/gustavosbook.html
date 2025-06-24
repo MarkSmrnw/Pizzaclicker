@@ -14,11 +14,11 @@
 
 <style>
     #spinwrapper{
+
         justify-content: center;
         align-items: center;
 
         padding: 2%;
-        max-width: 70%;
 
         border-radius: 20px;
         border: 5px solid black;
@@ -28,15 +28,19 @@
 
         overflow: hidden;
 
+        gap: 10px;
+
     }
 
     #spinwrapper * div {
-        aspect-ratio: 1/1;
-        max-height:150px;
+        aspect-ratio: 1/1 !important;
         max-width: 150px;
 
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
+
+        display: flex;
 
         background-color: rgba(255, 255, 255, 0.377);
     }
@@ -50,59 +54,37 @@
         align-self: center;
 
         border: 1px dashed;
-        
-        position:relative;
-    }
-
-    #title{
-        margin-top: 5%;
-
-        font-size: 40pt;
-        font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        text-align: center;
-
-        color: white;
     }
 
     #top{
-        margin-top: 10%;
-
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
+
+        margin-top: auto;
     }
 
     body {
         background-image: url("../Cookies/holz.webp");
         background-size: 50%;
         background-color: black;
+
+        overflow-y: hidden;
     }
 
     /* CLASSES */
 
     .sidepanels{
-        margin-top: auto;
-        margin-bottom: auto;
-
-        background-color: aqua;
+        align-self: center;
     }
 
-    .sidepanels div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-        height: 125px;
-        border: 2px solid green;
-
-        aspect-ratio: 1/8;
-        
-        background-color: azure;
-    }
+    
 
     .sidepanels.right {
-        margin-left: 1.2%;
+        margin-left: 1.5%;
     }
     .sidepanels.left {
         margin-right: .8%;
@@ -111,10 +93,7 @@
 </style>
 
 <body>
-    
-    <div id="title">
-        GUSTAVO'S BOOK
-    </div>
+
 
     <div class="container">
         <div id="top">
@@ -203,6 +182,9 @@
 
         <div>
             <input type="button" value="Spin" id="confirmspin">
+            <input type="button" value="Max Bet">
+            <input type="button" value="Half Bet">
+            <input type="button" value="Autospin">
         </div>
     </div>
     
